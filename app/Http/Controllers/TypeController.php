@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Student;
+use App\Models\Type;
 use Illuminate\Http\Request;
 
 class TypeController extends Controller
@@ -20,7 +22,7 @@ class TypeController extends Controller
      */
     public function create()
     {
-        //
+        return view( 'backend.type.create');
     }
 
     /**
@@ -28,7 +30,8 @@ class TypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $type =  Type::create($request->all());
+        dd($type);
     }
 
     /**

@@ -11,5 +11,5 @@ class Test extends Model
 
     protected $table = 'test';
 
-    protected $fillable = ['name','page'];
+    protected $fillable = ['name','page','price'];
 }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Borrow;
+use App\Models\Student;
 use Illuminate\Http\Request;
 
 class BorrowController extends Controller
@@ -20,7 +22,7 @@ class BorrowController extends Controller
      */
     public function create()
     {
-        //
+        return view( 'backend.borrow.create');
     }
 
     /**
@@ -28,7 +30,8 @@ class BorrowController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $borrow =  Borrow::create($request->all());
+        dd($borrow);
     }
 
     /**
