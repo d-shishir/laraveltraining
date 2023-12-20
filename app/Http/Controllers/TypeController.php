@@ -31,7 +31,8 @@ class TypeController extends Controller
     public function store(Request $request)
     {
         $type =  Type::create($request->all());
-        dd($type);
+//        dd($type);
+        return view('backend.success.success');
     }
 
     /**

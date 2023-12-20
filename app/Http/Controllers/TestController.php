@@ -33,7 +33,8 @@ class TestController extends Controller
     {
 //        dd($request->all());
         $test = Test::create($request->all());
-        dd($test);
+//        dd($test);
+        return view('backend.success.success');
     }
 
     /**

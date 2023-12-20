@@ -10,5 +10,6 @@ class Borrow extends Model
     use HasFactory;
 
     protected $table = 'borrows';
+    protected $primaryKey ='borrowId';
     protected $fillable = ['studentId','bookId','takenDate','broughtDate'];
 }

@@ -31,7 +31,8 @@ class BorrowController extends Controller
     public function store(Request $request)
     {
         $borrow =  Borrow::create($request->all());
-        dd($borrow);
+//        dd($borrow);
+        return view('backend.success.success');
     }
 
     /**

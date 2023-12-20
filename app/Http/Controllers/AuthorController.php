@@ -30,7 +30,8 @@ class AuthorController extends Controller
     public function store(Request $request)
     {
         $author =  Author::create($request->all());
-        dd($author);
+//        dd($author);
+        return view('backend.success.success');
     }
 
     /**

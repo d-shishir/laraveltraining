@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <h1 class="text-4xl">Create New Author</h1>
+    <h1 class="text-4xl mb-4 mt-4 text-center font-bold text-blue-600">Create New Author</h1>
 
     <div class="mt-10">
-        <form class="max-w-sm mx-auto" action="{{route('backend.author.store')}}" method="post">
+        <form class="max-w-md mx-auto border-2 border p-4 rounded-2xl" action="{{route('backend.author.store')}}" method="post">
             @csrf
             <div class="mb-5">
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>

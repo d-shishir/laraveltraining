@@ -10,12 +10,11 @@
 </head>
 
 <body>
-    <h1 class="text-4xl">Create New Book</h1>
+    <h1 class="text-4xl mb-4 mt-4 text-center font-bold text-blue-600">Create New Book</h1>
 
-
-    <form class="max-w-md mx-auto" method="post" action="{{ route('backend.student.store') }}">
+    <form class="max-w-md mx-auto border-2 border p-4 rounded-2xl" method="post" action="{{ route('backend.student.store') }}">
         @csrf
-        <div class="relative z-0 w-full mb-5 group">
+        <div class="relative z-0 w-full mt-5 mb-5 group">
             <input type="text" name="name" id="name"
                 class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" " required />

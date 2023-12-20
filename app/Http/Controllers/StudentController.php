@@ -13,7 +13,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
+        $students = Student::all();
+        return view('backend.student.index', compact('students'));
     }
 
     /**
@@ -29,8 +30,9 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $student =  Student::create($request->all());
-        dd($student);
+        $student = Student::create($request->all());
+        //        dd($student);
+         return view('backend.success.success');
     }
 
     /**
